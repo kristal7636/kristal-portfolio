@@ -34,7 +34,7 @@ const Hero = () => {
           className="rounded-full hidden md:block w-[200px] top-10 animate-pulse -right-20 absolute"
         />
       </div>
-      <div className="pl-[40px] md:pl-[50px] lg:pl-[200px] mt-[50px] md:mt-[100px] lg:mt-[150px]">
+      <div className="pl-[30px] md:pl-[50px] lg:pl-[200px] mt-[50px] md:mt-[100px] lg:mt-[150px]">
         <span className="relative text-2xl sm:text-3xl md:text-4xl text-white ">
           I am a Software Engineer.
         </span>
