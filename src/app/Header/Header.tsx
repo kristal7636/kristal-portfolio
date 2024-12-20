@@ -10,7 +10,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="flex items-center justify-between bg-[#210b3f] p-4  flex-wrap bg-gradient-to-r from-[#560ba1] to-[#1a0b2e] shadow-lg">
+    <header className="flex items-center justify-between p-4  flex-wrap bg-gradient-to-r from-[#560ba1] to-[#1a0b2e] shadow-lg">
       {/* Logo */}
       <div className=" cursor-pointer  flex items-center">
         <img
@@ -24,7 +24,7 @@ export default function Header() {
 
       {/* Hamburger Menu Button */}
       <button
-        className="md:hidden p-2"
+        className="md:hidden p-2 "
         onClick={toggleMenu}
         aria-label="Toggle Menu"
       >
@@ -39,7 +39,7 @@ export default function Header() {
       <nav
         className={`${
           menuOpen ? "flex" : "hidden"
-        } md:flex flex-col md:flex-row items-center gap-4 absolute md:static top-[64px] left-0 w-full md:w-auto bg-[#1A0B2E] md:bg-transparent shadow-md md:shadow-none py-4 md:py-0 z-10 transition-transform duration-300 ease-in-out`}
+        } md:flex flex-col md:flex-row items-center gap-4 absolute md:static top-[64px] left-0 w-full md:w-auto bg-gradient-to-r from-[#560ba1] to-[#1a0b2e] md:bg-none shadow-md md:shadow-none py-4 md:py-0 z-10 transition-transform duration-300 ease-in-out`}
       >
         <ul className="flex flex-col md:flex-row items-center gap-4  ">
           <li className="flex h-10 px-3 py-2 justify-center items-center gap-1.5">
