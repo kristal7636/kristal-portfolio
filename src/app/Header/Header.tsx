@@ -42,25 +42,25 @@ export default function Header() {
         } md:flex flex-col md:flex-row items-center gap-4 absolute md:static top-[64px] left-0 w-full md:w-auto bg-gradient-to-r from-[#560ba1] to-[#1a0b2e] md:bg-none shadow-md md:shadow-none py-4 md:py-0 z-10 transition-transform duration-300 ease-in-out`}
       >
         <ul className="flex flex-col md:flex-row items-center gap-4  ">
-          <li className="flex h-10 px-3 py-2 justify-center items-center gap-1.5">
+          {/* <li className="flex h-10 px-3 py-2 justify-center items-center gap-1.5">
             <a
               href="#"
               className="text-[#FFFFFF] text-right hover:text-[#7127BA]  text-xl md:text-2xl font-medium leading-[20px]  hover:text-primaryColor pr-0 md:pr-20"
             >
               Home
             </a>
-          </li>
+          </li> */}
           <li className="flex h-10 px-3 py-2 justify-center items-center gap-1.5">
             <a
-              href="#"
+              href="#skills"
               className="text-[#FFFFFF] hover:text-[#7127BA] text-xl md:text-2xl font-medium leading-[20px] hover:text-primaryColor  pr-0 md:pr-20"
             >
-              About
+              Skills
             </a>
           </li>
           <li className="flex h-10 px-3 py-2 justify-center items-center gap-1.5 rounded-md">
             <a
-              href="#"
+              href="https://www.instagram.com/varun_verse_2505"
               className="text-[#FFFFFF] hover:text-[#7127BA] text-xl md:text-2xl font-medium leading-[20px] hover:text-primaryColor  pr-0 md:pr-20"
             >
               Contact Me

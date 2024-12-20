@@ -20,7 +20,7 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <div className=" flex flex-col gap-2 md:gap-8 my-20 sm:mt-10 md:mt-36">
+    <div id="skills" className=" flex flex-col gap-2 md:gap-8 my-20 sm:mt-10 md:mt-36">
       <div className="flex justify-center">
         <h1 className="text">
           <span className="letter text-3xl md:text-4xl flex">
