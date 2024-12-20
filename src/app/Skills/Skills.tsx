@@ -37,7 +37,13 @@ const Skills = () => {
             <img
               src={skill.src}
               alt={skill.alt}
-              className="mr-4  md:h-12 h-6  md:w-12 w-6"
+              className={`mr-4 md:h-12 h-6  md:w-12 w-6 ${
+                skill.label === "ReactJS"
+                  ? "animate-spin"
+                  : skill.label === "Redux"
+                  ? "animate-spin"
+                  : ""
+              }`}
             />
             <h1 className="text-center  text-lg md:text-3xl">{skill.label}</h1>
           </div>

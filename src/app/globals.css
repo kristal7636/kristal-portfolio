@@ -168,22 +168,13 @@ body {
   5%,
   50%,
   100% {
-    opacity: 1;
-    transform: translate(-0.2rem, 1rem) rotate(10deg);
+    opacity: 10;
+    transform: translate(-0.2rem, 1rem) rotate(30deg);
   }
-  5.5%,
-  7% {
-    opacity: 0;
-    transform: translate(-0.2rem, 1rem) rotate(10deg);
-  }
-  6%,
-  6.5% {
+
+  50% {
     opacity: 3;
-    transform: translate(-0.2rem, 1rem) rotate(10deg);
-  }
-  8% {
-    opacity: 3;
-    transform: translate(-0.2rem, 1rem) rotate(360deg);
+    transform: translate(-0.2rem, 1rem) rotate(40deg);
   }
 }
 
@@ -194,5 +185,5 @@ body {
 
 .letter-2 {
   transform: translate(-0.2rem, 1rem) rotate(10deg);
-  animation: flicker 2s linear infinite;
+  animation: flicker 3s linear infinite;
 }

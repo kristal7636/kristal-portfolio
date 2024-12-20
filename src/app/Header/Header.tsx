@@ -45,7 +45,7 @@ export default function Header() {
           <li className="flex h-10 px-3 py-2 justify-center items-center gap-1.5">
             <a
               href="#"
-              className="text-[#FFFFFF] text-right hover:text-red-500  text-xl md:text-2xl font-medium leading-[20px]  hover:text-primaryColor pr-0 md:pr-20"
+              className="text-[#FFFFFF] text-right hover:text-[#7127BA]  text-xl md:text-2xl font-medium leading-[20px]  hover:text-primaryColor pr-0 md:pr-20"
             >
               Home
             </a>
@@ -53,7 +53,7 @@ export default function Header() {
           <li className="flex h-10 px-3 py-2 justify-center items-center gap-1.5">
             <a
               href="#"
-              className="text-[#FFFFFF] hover:text-red-500  text-xl md:text-2xl font-medium leading-[20px] hover:text-primaryColor  pr-0 md:pr-20"
+              className="text-[#FFFFFF] hover:text-[#7127BA] text-xl md:text-2xl font-medium leading-[20px] hover:text-primaryColor  pr-0 md:pr-20"
             >
               About
             </a>
@@ -61,7 +61,7 @@ export default function Header() {
           <li className="flex h-10 px-3 py-2 justify-center items-center gap-1.5 rounded-md">
             <a
               href="#"
-              className="text-[#FFFFFF] hover:text-red-500  text-xl md:text-2xl font-medium leading-[20px] hover:text-primaryColor  pr-0 md:pr-20"
+              className="text-[#FFFFFF] hover:text-[#7127BA] text-xl md:text-2xl font-medium leading-[20px] hover:text-primaryColor  pr-0 md:pr-20"
             >
               Contact Me
             </a>
