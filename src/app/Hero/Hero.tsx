@@ -3,17 +3,21 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className=" h-[80vh]">
-      <div className="  absolute flex ml-8 md:ml-[650px] mt-[85px]">
+    <div className="">
+      <div className="  absolute flex ml-8 md:ml-[650px] mt-[85px] ">
         <span className="text-2xl text-white animate-bounce">
           Hello! I Am <span className="text-[#7127BA]">Varun Gaudani</span>
         </span>
       </div>
       <div className=" z-50 absolute ml-8 md:ml-[650px] mt-40 md:mt-[240px]">
-        <span className="text-6xl text-white mt-36">
-          Judge a book <br /> by its
-          <span className="text-[#7127BA] animate-bounce">Cover</span>
-        </span>{" "}
+        <span className="text-4xl text-white mt-36 keyboard text-[#7127BA] 	 ">
+          {" "}
+          Judge a book <br /> by its <span className="key">C</span>
+          <span className="key">o</span>
+          <span className="key">v</span>
+          <span className="key">e</span>
+          <span className="key">r</span>
+        </span>
         <p className="text-white text-xl mt-[10px]">
           Because if the cover does not impress you what else can?
         </p>
@@ -29,28 +33,27 @@ const Hero = () => {
           src="./Arrow.png"
           className="rounded-full hidden md:block w-[200px] top-10 animate-pulse -right-20 absolute"
         />
-      
       </div>
       <div className="pl-[20px] md:pl-[100px] lg:pl-[400px] mt-[50px] md:mt-[100px] lg:mt-[150px]">
-  <span className="relative text-2xl sm:text-3xl md:text-4xl text-white ">
-    I'm a Software Engineer.
-  </span>
-  <br />
-  <span className="text-sm sm:text-base md:text-lg">
-    Currently, I'm a <span className="text-[#7127BA] animate-bounce"> Software Engineer</span> at  VEERRANVI TECHNOLOGIES
-  </span>
-  <br />
-  <div className="pt-5 sm:pt-8 md:pt-10">
-    <span className="text-sm sm:text-base md:text-lg">
-      A Frontend developer, functioning in the industry for 3+ years now.
-      <br />
-      I make meaningful and delightful digital products that create an equilibrium
-      <br />
-      between user needs and business goals.
-    </span>
-  </div>
-</div>
-</div>
+        <span className="relative text-2xl sm:text-3xl md:text-4xl text-white ">
+          I am a Software Engineer.
+        </span>
+        <br />
+        <span className="text-sm sm:text-base md:text-lg  text-white">
+          Currently, I am a{" "}
+          <span className="text-[#7127BA] ">Software Engineer</span> at
+          VEERRANVI TECHNOLOGIES
+        </span>
+
+        <div className="pt-5 sm:pt-8 md:pt-10  text-white  ">
+          <span className="text-sm sm:text-base md:text-lg  ">
+            A Frontend developer, functioning in the industry for 3+ years now.
+            I make meaningful and delightful digital products that create an
+            between user needs and business goals.
+          </span>
+        </div>
+      </div>
+    </div>
   );
 };
 
