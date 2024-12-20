@@ -1,13 +1,6 @@
 "use client";
 import React from "react";
 
-const skillsData = [
-  { src: "./linkedIn.svg", alt: "HTML5 Logo", label: "LinkedIn", href: "https://in.linkedin.com/in/varun-gaudani-938b79292" },
-  { src: "./instagram.svg", alt: "CSS3 Logo", label: "Instagram", href: "https://www.instagram.com/varun_verse_2505/" },
-  { src: "./facebook.svg", alt: "JavaScript Logo", label: "Facebook", href: "https://www.facebook.com/profile.php?id=100075145203930" },
-//   { src: "./telegram.svg", alt: "ReactJS Logo", label: "Telegram", href: "https://telegram.org" },
-  { src: "./gmail.svg", alt: "React Hook Forms Logo", label: "varungaudani80@gmail.com", href: "mailto:varungaudani80@gmail.com" },
-];
 
 const Footer = () => {
   return (
