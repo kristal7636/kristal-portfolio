@@ -16,7 +16,8 @@
 
 body {
   color: var(--foreground);
-  background: #1a0b2e;
+
+  background-image: linear-gradient(to right, #560ba1, #1a0b2e);
 }
 
 .key {

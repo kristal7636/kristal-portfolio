@@ -10,7 +10,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="flex items-center justify-between bg-[#1A0B2E] p-4 shadow-md flex-wrap">
+    <header className="flex items-center justify-between bg-[#210b3f] p-4  flex-wrap bg-gradient-to-r from-[#560ba1] to-[#1a0b2e] shadow-lg">
       {/* Logo */}
       <div className=" cursor-pointer  flex items-center">
         <img

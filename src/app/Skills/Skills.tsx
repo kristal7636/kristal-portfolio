@@ -32,7 +32,7 @@ const Skills = () => {
         {skillsData.map((skill, index) => (
           <div
             key={index}
-            className="min-w-[50px] my-0  mx-0 md:my-2  md:mx-8 bg-[#7127BA] text-white md:py-4 md:px-6  py-2 px-4 rounded-full flex items-center justify-center shadow-lg"
+            className="min-w-[50px] my-0  mx-0 md:my-2  md:mx-2 bg-[#7127BA] text-white md:py-4 md:px-6  py-2 px-4 rounded-full flex items-center justify-center shadow-lg"
           >
             <img
               src={skill.src}

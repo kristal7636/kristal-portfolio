@@ -3,14 +3,14 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="">
-      <div className="  absolute flex ml-8 md:ml-[650px] mt-[85px] ">
+    <div className=" ">
+      <div className="  absolute flex ml-8 md:ml-[550px] mt-[85px] ">
         <span className="text-2xl text-white animate-bounce">
           Hello! I Am <span className="text-[#7127BA]">Varun Gaudani</span>
         </span>
       </div>
-      <div className=" z-50 absolute ml-8 md:ml-[650px] mt-40 md:mt-[240px]">
-        <span className="text-4xl text-white mt-36 keyboard text-[#7127BA] 	 ">
+      <div className=" z-50 absolute ml-8  md:ml-[550px] mt-40 md:mt-[240px]">
+        <span className="text-4xl text-white mt-36 keyboard 	 ">
           {" "}
           Judge a book <br /> by its <span className="key">C</span>
           <span className="key">o</span>
@@ -22,8 +22,8 @@ const Hero = () => {
           Because if the cover does not impress you what else can?
         </p>
       </div>
-      <div className=" ml-0 items-center flex justify-center md:ml-[350px] w-full  md:w-[250px] relative ">
-        <div className=" pt-44 ">
+      <div className="  ml-0 items-center flex justify-center md:ml-[250px] w-full  md:w-[250px] relative ">
+        <div className=" pt-44  ">
           <img
             src="./Me.png"
             className="rounded-full md:animate-pulse opacity-50 "
@@ -34,7 +34,7 @@ const Hero = () => {
           className="rounded-full hidden md:block w-[200px] top-10 animate-pulse -right-20 absolute"
         />
       </div>
-      <div className="pl-[20px] md:pl-[100px] lg:pl-[400px] mt-[50px] md:mt-[100px] lg:mt-[150px]">
+      <div className="pl-[40px] md:pl-[50px] lg:pl-[200px] mt-[50px] md:mt-[100px] lg:mt-[150px]">
         <span className="relative text-2xl sm:text-3xl md:text-4xl text-white ">
           I am a Software Engineer.
         </span>
