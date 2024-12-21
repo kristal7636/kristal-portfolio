@@ -25,8 +25,8 @@ const Hero = () => {
       <div className="  ml-0 items-center flex justify-center md:ml-[250px] w-full  md:w-[250px] relative ">
         <div className=" pt-44  ">
           <img
-            src="./Me.png"
-            className="rounded-full md:animate-pulse opacity-50 "
+            src="./avatar-imac.svg"
+            className="rounded-full md:animate-pulse opacity-50 md:opacity-80 md:mb-0 mb-10 "
           />
         </div>
         <img
