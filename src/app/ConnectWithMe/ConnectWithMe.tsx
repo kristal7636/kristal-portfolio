@@ -23,7 +23,7 @@ const skillsData = [
   {
     src: "./gmail.svg",
     alt: "React Hook Forms Logo",
-    label: "varungaudani80@gmail.com",
+    label: "Gmail",
     href: "#", // Placeholder since we handle the click dynamically
     isGmail: true, // Add a flag to identify the Gmail button
   },
