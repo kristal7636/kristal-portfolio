@@ -27,6 +27,12 @@ const skillsData = [
     href: "#", // Placeholder since we handle the click dynamically
     isGmail: true, // Add a flag to identify the Gmail button
   },
+  {
+    src: "./github.png",
+    alt: "React Hook Forms Logo",
+    label: "GitHub",
+    href: "https://github.com/Varun1452", // Placeholder since we handle the click dynamically
+  },
 ];
 
 const ConnectWithME = () => {
