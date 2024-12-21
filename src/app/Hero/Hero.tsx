@@ -6,7 +6,8 @@ const Hero = () => {
     <div className=" ">
       <div className="  absolute flex ml-8 md:ml-[550px] mt-[85px] ">
         <span className="text-2xl text-white animate-bounce">
-          Hello! I Am <span className="text-[#7127BA]">Varun Gaudani</span>
+          Hello! I Am{" "}
+          <span className="text-[#7127BA] opacity-100">Varun Gaudani</span>
         </span>
       </div>
       <div className=" z-50 absolute ml-8  md:ml-[550px] mt-40 md:mt-[240px]">
@@ -23,7 +24,7 @@ const Hero = () => {
         </p>
       </div>
       <div className="  ml-0 items-center flex justify-center md:ml-[250px] w-full  md:w-[250px] relative ">
-        <div className=" pt-44  ">
+        <div className=" pt- md:pt-44 opacity-50 md:opacity-100">
           <img
             src="./avatar-imac.svg"
             className="rounded-full md:animate-pulse opacity-50 md:opacity-80 md:mb-0 mb-10 "
