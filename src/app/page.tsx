@@ -12,12 +12,12 @@ const preahvihear = Preahvihear({
 
 export default function Home() {
   return (
-    <div className={`${preahvihear.className} `}>
+    <div className={`${preahvihear.className}`}>
       <Header />
       <Hero />
       <Skills />
       <ConnectWithME />
-      <Footer/>
+      <Footer />
     </div>
   );
 }

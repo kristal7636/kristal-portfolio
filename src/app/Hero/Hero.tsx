@@ -35,18 +35,18 @@ const Hero = () => {
           className="rounded-full hidden md:block w-[200px] top-10 animate-pulse -right-20 absolute"
         />
       </div>
-      <div className="pl-[30px] md:pl-[50px] lg:pl-[200px] mt-[50px] md:mt-[100px] lg:mt-[150px]">
+      <div className=" pr-[15px] md:ml-32 pl-[30px] md:pl-[50px] lg:pl-[200px] mt-[50px] md:mt-[100px] lg:mt-[150px]">
         <span className="relative text-2xl sm:text-3xl md:text-4xl text-white ">
           I am a Software Engineer.
         </span>
         <br />
-        <span className="text-sm sm:text-base md:text-lg  text-white">
+        <span className="text-sm sm:text-base md:text-lg text-white">
           Currently, I am a{" "}
           <span className="text-[#7127BA] ">Software Engineer</span> at
           VEERRANVI TECHNOLOGIES
         </span>
 
-        <div className="pt-5 sm:pt-8 md:pt-10  text-white  ">
+        <div className="pt-5 sm:pt-8 md:pt-10  text-white mr-10 md:mr-[500px] ">
           <span className="text-sm sm:text-base md:text-lg  ">
             A Frontend developer, functioning in the industry for 3+ years now.
             I make meaningful and delightful digital products that create an
