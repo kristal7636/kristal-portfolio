@@ -10,14 +10,14 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="flex items-center justify-between p-2  flex-wrap bg-gradient-to-r from-[#1a0b2e] to-[#560ba1]  shadow-lg">
+    <header className="flex items-center  justify-between p-2 flex-wrap bg-gradient-to-r from-[#1a0b2e] to-[#560ba1]  shadow-lg">
       {/* Logo */}
-      <div className=" cursor-pointer  flex items-center">
+      <div className=" cursor-pointer flex items-center">
         <img
           src="./VS.png"
-          className=" w-14 h-14 rounded-full ml-4 sm:ml-28 sm:mr-16"
+          className=" w-14 h-14 rounded-full ml-4 sm:ml-28 sm:mr-16 "
         />
-        <span className=" text-xl md:text-4xl  text-[#FFFFFF] font-semibold  ">
+        <span className=" text-xl md:text-4xl ml-4 md:ml-0 text-[#FFFFFF] font-semibold  ">
           VARUN
         </span>
       </div>
