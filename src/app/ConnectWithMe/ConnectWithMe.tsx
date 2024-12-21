@@ -45,7 +45,7 @@ const ConnectWithME = () => {
 
   return (
     <div
-      id="skills"
+      id="ConnectWithMe"
       className="flex flex-col gap-2 md:gap-8 my-20 sm:mt-10 md:mt-36"
     >
       <div className="flex justify-center">

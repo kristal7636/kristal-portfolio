@@ -20,7 +20,10 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <div id="skills" className=" flex flex-col gap-2 md:gap-8 my-20 sm:mt-10 md:mt-36">
+    <div
+      id="skills"
+      className=" flex flex-col gap-2 md:gap-8 my-20 sm:mt-10 md:mt-36"
+    >
       <div className="flex justify-center">
         <h1 className="text">
           <span className="letter text-3xl md:text-4xl flex">
@@ -28,11 +31,11 @@ const Skills = () => {
           </span>
         </h1>
       </div>
-      <div className=" mx-0 md:mx-40 mt-10 flex flex-wrap gap-4 justify-center">
+      <div className="  mx-0 md:mx-40 mt-10 flex flex-wrap gap-4 justify-center">
         {skillsData.map((skill, index) => (
           <div
             key={index}
-            className="min-w-[50px] my-0  mx-0 md:my-2  md:mx-2 backdrop-blur-md backdrop-brightness-15 0 text-white md:py-4 md:px-6  py-2 px-4 rounded-full flex items-center justify-center shadow-lg"
+            className="backdrop-blur-md backdrop-brightness-150 min-w-[50px] my-0  mx-0 md:my-2  md:mx-2  text-white md:py-4 md:px-6  py-2 px-4 rounded-full flex items-center justify-center shadow-lg"
           >
             <img
               src={skill.src}

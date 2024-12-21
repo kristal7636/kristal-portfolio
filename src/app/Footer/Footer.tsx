@@ -1,20 +1,24 @@
 "use client";
 import React from "react";
 
-
 const Footer = () => {
   return (
-    
-    <footer className="flex items-center justify-between bg-[#1a0b2e] text-white px-4 py-2 rounded-full mx-auto w-full max-w-5xl">
-        <div className="flex items-center space-x-2">
-            <div className="bg-black text-white flex items-center justify-center w-8 h-8 rounded-full">
-                <span className="text-xs font-bold">VG</span>
-            </div>
-            <span className="font-bold">VARUN {" "}<span className="text-black">GAUDANI</span></span>
+    <footer className=" bg-gradient-to-r from-[#1a0b2e] to-[#560ba1] shadow-lg flex items-center justify-between bg-[#7127BA] text-white px-4 py-2 mx-auto w-full max-w-10xl">
+      <div className="flex items-center space-x-2">
+        <div className=" cursor-pointer  flex items-center">
+          <img
+            src="./VS.png"
+            className=" w-12 h-12 rounded-full ml-4 sm:ml-14 sm:mr-4"
+          />
         </div>
-        <span className="text-sm">Designed & Built by <span className="font-bold">Varun Gaudani</span></span>
+        <span className="font-bold">
+          VARUN <span className="#7127BA">GAUDANI</span>
+        </span>
+      </div>
+      <span className="text-sm sm:mr-4">
+        Designed & Built by <span className="font-bold">Varun Gaudani</span>
+      </span>
     </footer>
-
   );
 };
 
