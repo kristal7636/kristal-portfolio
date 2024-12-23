@@ -4,6 +4,7 @@ import { Preahvihear } from "next/font/google";
 import Skills from "./Skills/Skills";
 import ConnectWithME from "./ConnectWithMe/ConnectWithMe";
 import Footer from "./Footer/Footer";
+import Contact from "./ContactMe/ContactMe";
 
 const preahvihear = Preahvihear({
   weight: "400", // Specify the weight if needed
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <Skills />
       <ConnectWithME />
+      <Contact />
       <Footer />
     </div>
   );
