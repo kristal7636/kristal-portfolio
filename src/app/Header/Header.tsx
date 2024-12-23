@@ -14,7 +14,7 @@ export default function Header() {
       {/* Logo */}
       <div className=" cursor-pointer  flex items-center">
         <img
-          src="./VS.png"
+          src="./VS.svg"
           className=" w-14 h-14 rounded-full ml-4 sm:ml-28 sm:mr-16"
         />
         <span className=" text-xl md:text-4xl  text-[#FFFFFF] font-semibold  ">
