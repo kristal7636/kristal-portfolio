@@ -5,10 +5,18 @@ const Hero = () => {
   return (
     <div className=" ">
       <div className="  absolute flex ml-8 md:ml-[550px] mt-[85px] ">
-        <span className="text-2xl text-white animate-bounce">
-          Hello! I Am{" "}
-          <span className="text-[#7127BA] opacity-100">Varun Gaudani</span>
-        </span>
+        <p>Hello 👋 I'm</p>
+        <section className="animation">
+          <div className="first">
+            <div>Varun Gaudani</div>
+          </div>
+          <div className="second">
+            <div>Web Developer</div>
+          </div>
+          <div className="third">
+            <div>Software Engineer</div>
+          </div>
+        </section>
       </div>
       <div className=" z-50 absolute ml-8  md:ml-[550px] mt-40 md:mt-[240px]">
         <span className="text-4xl text-white mt-36 keyboard 	 ">
@@ -36,9 +44,9 @@ const Hero = () => {
         />
       </div>
       <div className=" pr-[15px] md:ml-32 pl-[30px] md:pl-[50px] lg:pl-[200px] mt-[50px] md:mt-[100px] lg:mt-[150px]">
-        <span className="relative text-2xl sm:text-3xl md:text-4xl text-white ">
+        <h2 className="relative text-2xl sm:text-3xl md:text-4xl text-white ">
           I am a Software Engineer.
-        </span>
+        </h2>
         <br />
         <span className="text-sm sm:text-base md:text-lg text-white">
           Currently, I am a{" "}
@@ -46,7 +54,7 @@ const Hero = () => {
           VEERRANVI TECHNOLOGIES
         </span>
 
-        <div className="pt-5 sm:pt-8 md:pt-10  text-white mr-10 md:mr-[500px] ">
+        <div className="pt-5 sm:pt-8 md:pt-10  text-white mr-10 md:mr-[400px] ">
           <span className="text-sm sm:text-base md:text-lg  ">
             A Frontend developer, functioning in the industry for 3+ years now.
             I make meaningful and delightful digital products that create an
