@@ -1,22 +1,37 @@
 "use client";
 import React, { useState } from "react";
 
-const Contact = () => {
-  const [formData, setFormData] = useState({
+// Define the types for form data and error messages
+type FormData = {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+};
+
+type FormErrors = {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+};
+
+const Contact: React.FC = () => {
+  const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
     phone: "",
     message: "",
   });
 
-  const [errors, setErrors] = useState({
+  const [errors, setErrors] = useState<FormErrors>({
     name: "",
     email: "",
     phone: "",
     message: "",
   });
 
-  const validateField = (name, value) => {
+  const validateField = (name: keyof FormData, value: string): string => {
     let error = "";
 
     if (name === "name" && !value.trim()) {
@@ -42,7 +57,9 @@ const Contact = () => {
     return error;
   };
 
-  const handleChange = (e) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ): void => {
     const { name, value } = e.target;
 
     // Update form data
@@ -54,18 +71,19 @@ const Contact = () => {
     // Validate the field
     setErrors({
       ...errors,
-      [name]: validateField(name, value),
+      [name]: validateField(name as keyof FormData, value),
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
 
-    const newErrors = Object.keys(formData).reduce((acc, field) => {
-      const error = validateField(field, formData[field]);
-      if (error) acc[field] = error;
+    const newErrors: FormErrors = Object.keys(formData).reduce((acc, field) => {
+      const fieldName = field as keyof FormData;
+      const error = validateField(fieldName, formData[fieldName]);
+      if (error) acc[fieldName] = error;
       return acc;
-    }, {});
+    }, {} as FormErrors);
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
