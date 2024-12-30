@@ -7,7 +7,7 @@ const Contact = () => {
     phone: "",
     message: "",
   });
-  const [errors, setErrors] = useState({
+  const [errors] = useState({
     email: "",
     phone: "",
   });
@@ -18,44 +18,10 @@ const Contact = () => {
       [name]: value,
     }));
   };
-  const validateEmail = (email) => {
-    // Regular expression for email validation
-    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-    return emailRegex.test(email);
-  };
-  const validatePhoneNumber = (phone) => {
-    // Regular expression for phone number validation
-    const phoneRegex =
-      /^[+]?[0-9]{1,4}?[-.\s]?(\(?\d{1,4}?\)?[-.\s]?)?[\d\s.-]{7,}$/;
-    return phoneRegex.test(phone);
-  };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    let validationErrors = {};
-    alert("Thanks, You will be responded soon");
-    // Validate Email
-    if (!validateEmail(formData.email)) {
-      validationErrors.email = "Please enter a valid email address.";
-    }
-    // Validate Phone
-    if (!validatePhoneNumber(formData.phone)) {
-      validationErrors.phone = "Please enter a valid phone number.";
-    }
-    if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
-    } else {
-      setErrors("");
-      // Handle form submission logic (e.g., sending data to the server)
-      console.log("Form Submitted", formData);
-    }
-  };
+
   return (
     <div className="max-w-4xl mx-auto px-4 py-16 ">
-      <form
-        className="text-white shadow-lg rounded-lg p-8 bg-gradient-to-r from-[#1a0b2e] to-[#560ba1] "
-        onSubmit={handleSubmit}
-        z
-      >
+      <form className="text-white shadow-lg rounded-lg p-8 bg-gradient-to-r from-[#1a0b2e] to-[#560ba1] ">
         <div className="mb-4">
           <label className="block text-gray-700 text-white">Full Name</label>
           <input
