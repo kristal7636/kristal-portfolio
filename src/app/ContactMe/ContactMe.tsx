@@ -23,7 +23,7 @@ const Contact = () => {
     <div className="max-w-4xl mx-auto px-4 py-16 ">
       <form className="text-white shadow-lg rounded-lg p-8 bg-gradient-to-r from-[#1a0b2e] to-[#560ba1] ">
         <div className="mb-4">
-          <label className="block text-gray-700 text-white">Full Name</label>
+          <label className="block text-white">Full Name</label>
           <input
             type="text"
             name="name"

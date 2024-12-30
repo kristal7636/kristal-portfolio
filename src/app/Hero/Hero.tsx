@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className=" ">
       <div className="  absolute flex ml-8 md:ml-[550px] mt-[85px] ">
-        <p>Hello 👋 I'm</p>
+        <p>Hello 👋 I am</p>
         <section className="animation">
           <div className="first">
             <div>Varun Gaudani</div>
