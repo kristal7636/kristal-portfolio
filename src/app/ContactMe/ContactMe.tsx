@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 const Contact = () => {
-  const [formData, setFormData] = useState({
+  const [formData] = useState({
     name: "",
     email: "",
     phone: "",
@@ -11,13 +11,6 @@ const Contact = () => {
     email: "",
     phone: "",
   });
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-16 ">
@@ -29,12 +22,11 @@ const Contact = () => {
             name="name"
             className="w-full px-4 py-2 border border-gray-300 text-black rounded-md"
             value={formData.name}
-            onChange={handleChange}
             required
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 text-white">Email</label>
+          <label className="block  text-white">Email</label>
           <input
             type="email"
             name="email"
@@ -42,7 +34,6 @@ const Contact = () => {
               errors.email ? "border-red-500" : ""
             }`}
             value={formData.email}
-            onChange={handleChange}
             required
           />
           {errors.email && (
@@ -58,7 +49,6 @@ const Contact = () => {
               errors.phone ? "border-red-500" : ""
             }`}
             value={formData.phone}
-            onChange={handleChange}
             required
           />
           {errors.phone && (
@@ -70,9 +60,7 @@ const Contact = () => {
           <textarea
             name="message"
             className="w-full px-4 py-2 border border-gray-300 text-black rounded-md"
-            rows="5"
             value={formData.message}
-            onChange={handleChange}
             required
           ></textarea>
         </div>
