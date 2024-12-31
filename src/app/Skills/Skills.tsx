@@ -22,7 +22,8 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className=" flex flex-col gap-2 md:gap-8 my-20 sm:mt-10 md:mt-36"
+      className=" flex flex-col gap-2 md:gap-8 my-20 sm:mt-10 md:mt-36 bg-hero-pattern bg-custom-size bg-no-repeat     bg-custom-center
+     bg-custom-small sm:bg-custom-medium md:bg-custom-large "
     >
       <div className="flex justify-center">
         <h1 className="text">
