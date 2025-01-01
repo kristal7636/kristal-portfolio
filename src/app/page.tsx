@@ -5,6 +5,7 @@ import Skills from "./Skills/Skills";
 import ConnectWithME from "./ConnectWithMe/ConnectWithMe";
 import Footer from "./Footer/Footer";
 import Contact from "./ContactMe/ContactMe";
+import Projects from "./ProjectsWorkedOn/ProjectsWorkedOn";
 
 const preahvihear = Preahvihear({
   weight: "400", // Specify the weight if needed
@@ -18,6 +19,7 @@ export default function Home() {
       <Hero />
       <Skills />
       <ConnectWithME />
+      <Projects />
       <Contact />
       <Footer />
     </div>
