@@ -73,7 +73,7 @@ export default function CricTracker() {
           {/* Button */}
           <div className="flex justify-center md:justify-start">
             <a
-              href="https://cementech-infra-mevpasjh9-varun1452s-projects.vercel.app/"
+              href="https://cementech-infra.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
