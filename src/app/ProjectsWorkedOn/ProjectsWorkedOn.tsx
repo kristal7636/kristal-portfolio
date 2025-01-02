@@ -14,7 +14,9 @@ export default function CricTracker() {
 
   useEffect(() => {
     const checkMobile = () => {
-      const isMobileDevice = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      const isMobileDevice = /iPhone|iPad|iPod|Android/i.test(
+        navigator.userAgent
+      );
       setIsMobile(isMobileDevice);
     };
 
@@ -33,7 +35,10 @@ export default function CricTracker() {
       window.addEventListener("deviceorientation", handleDeviceOrientation);
 
       return () => {
-        window.removeEventListener("deviceorientation", handleDeviceOrientation);
+        window.removeEventListener(
+          "deviceorientation",
+          handleDeviceOrientation
+        );
       };
     }
   }, [isMobile]);
@@ -68,9 +73,17 @@ export default function CricTracker() {
     { src: "./js.svg", alt: "JavaScript Logo", label: "JavaScript" },
     { src: "./RJS.svg", alt: "ReactJS Logo", label: "ReactJS" },
     { src: "./Bts.png", alt: "Bootstrap Logo", label: "Bootstrap" },
-    { src: "./RHF.svg", alt: "React Hook Forms Logo", label: "React Hook Forms" },
+    {
+      src: "./RHF.svg",
+      alt: "React Hook Forms Logo",
+      label: "React Hook Forms",
+    },
     { src: "./TW.svg", alt: "Tailwind CSS Logo", label: "Tailwind CSS" },
-    { src: "./SC.svg", alt: "Styled Components Logo", label: "Styled Components" },
+    {
+      src: "./SC.svg",
+      alt: "Styled Components Logo",
+      label: "Styled Components",
+    },
     { src: "./G.svg", alt: "Git Logo", label: "GIT" },
   ];
 
@@ -94,7 +107,7 @@ export default function CricTracker() {
         <div className="flex-1 flex justify-center md:justify-start">
           <div className="w-60 h-72 md:w-80 md:h-96 lg:w-[300px] lg:h-[350px]">
             <img
-              src="avatar-imac.svg" // Replace with your image path
+              src="CI.png" // Replace with your image path
               alt="CricTracker UI"
               className="w-full h-full object-cover rounded-lg"
             />
