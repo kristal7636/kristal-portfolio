@@ -2,12 +2,17 @@
 import { Link } from "lucide-react";
 import React, { useState, useEffect } from "react";
 
+interface Skill {
+  src: string;
+  alt: string;
+  label: string;
+}
+
 export default function CricTracker() {
-  const [transformStyle, setTransformStyle] = useState({});
-  const [isMobile, setIsMobile] = useState(false);
+  const [transformStyle, setTransformStyle] = useState<React.CSSProperties>({});
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {
-    // Check if the device is mobile
     const checkMobile = () => {
       const isMobileDevice = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
       setIsMobile(isMobileDevice);
@@ -15,12 +20,10 @@ export default function CricTracker() {
 
     checkMobile();
 
-    // Add deviceorientation event listener for mobile
     if (isMobile) {
-      const handleDeviceOrientation = (e) => {
-        const { beta, gamma } = e; // Tilt values
-        const rotateX = beta / 10; // Adjust sensitivity for X-axis rotation
-        const rotateY = gamma / 10; // Adjust sensitivity for Y-axis rotation
+      const handleDeviceOrientation = (e: DeviceOrientationEvent) => {
+        const rotateX = (e.beta ?? 0) / 10; // Default to 0 if beta is null
+        const rotateY = (e.gamma ?? 0) / 10; // Default to 0 if gamma is null
 
         setTransformStyle({
           transform: `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
@@ -35,17 +38,17 @@ export default function CricTracker() {
     }
   }, [isMobile]);
 
-  const handleMouseMove = (e) => {
-    if (isMobile) return; // Skip mouse events on mobile
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (isMobile) return;
 
     const card = e.currentTarget.getBoundingClientRect();
-    const x = e.clientX - card.left; // X-coordinate relative to the card
-    const y = e.clientY - card.top; // Y-coordinate relative to the card
+    const x = e.clientX - card.left;
+    const y = e.clientY - card.top;
     const centerX = card.width / 2;
     const centerY = card.height / 2;
 
-    const rotateX = ((y - centerY) / centerY) * -10; // Rotation along the X-axis
-    const rotateY = ((x - centerX) / centerX) * 10; // Rotation along the Y-axis
+    const rotateX = ((y - centerY) / centerY) * -10;
+    const rotateY = ((x - centerX) / centerX) * 10;
 
     setTransformStyle({
       transform: `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
@@ -59,23 +62,15 @@ export default function CricTracker() {
     });
   };
 
-  const skillsData = [
+  const skillsData: Skill[] = [
     { src: "./html5.svg", alt: "HTML5 Logo", label: "HTML5" },
     { src: "./CSS3.svg", alt: "CSS3 Logo", label: "CSS3" },
     { src: "./js.svg", alt: "JavaScript Logo", label: "JavaScript" },
     { src: "./RJS.svg", alt: "ReactJS Logo", label: "ReactJS" },
     { src: "./Bts.png", alt: "Bootstrap Logo", label: "Bootstrap" },
-    {
-      src: "./RHF.svg",
-      alt: "React Hook Forms Logo",
-      label: "React Hook Forms",
-    },
+    { src: "./RHF.svg", alt: "React Hook Forms Logo", label: "React Hook Forms" },
     { src: "./TW.svg", alt: "Tailwind CSS Logo", label: "Tailwind CSS" },
-    {
-      src: "./SC.svg",
-      alt: "Styled Components Logo",
-      label: "Styled Components",
-    },
+    { src: "./SC.svg", alt: "Styled Components Logo", label: "Styled Components" },
     { src: "./G.svg", alt: "Git Logo", label: "GIT" },
   ];
 
