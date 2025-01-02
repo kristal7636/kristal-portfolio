@@ -24,8 +24,8 @@ export default function CricTracker() {
 
     if (isMobile) {
       const handleDeviceOrientation = (e: DeviceOrientationEvent) => {
-        const rotateX = (e.beta ?? 0) / 10; // Default to 0 if beta is null
-        const rotateY = (e.gamma ?? 0) / 10; // Default to 0 if gamma is null
+        const rotateX = (e.beta ?? 0) / 10;
+        const rotateY = (e.gamma ?? 0) / 10;
 
         setTransformStyle({
           transform: `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
@@ -73,11 +73,7 @@ export default function CricTracker() {
     { src: "./js.svg", alt: "JavaScript Logo", label: "JavaScript" },
     { src: "./RJS.svg", alt: "ReactJS Logo", label: "ReactJS" },
     { src: "./Bts.png", alt: "Bootstrap Logo", label: "Bootstrap" },
-    {
-      src: "./RHF.svg",
-      alt: "React Hook Forms Logo",
-      label: "React Hook Forms",
-    },
+
     { src: "./TW.svg", alt: "Tailwind CSS Logo", label: "Tailwind CSS" },
     {
       src: "./SC.svg",
@@ -95,7 +91,7 @@ export default function CricTracker() {
         </h2>
       </div>
       <div
-        className="py-8 px-6 md:px-8 lg:px-12 shadow-lg text-white flex flex-col md:flex-row gap-8 md:gap-12 rounded-3xl bg-gradient-to-r from-[#1a0b2e] to-[#560ba1]"
+        className="py-8 px-4 sm:px-6 md:px-8 lg:px-12 shadow-lg text-white flex flex-col md:flex-row gap-8 md:gap-12 rounded-3xl bg-gradient-to-r from-[#1a0b2e] to-[#560ba1]"
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         style={{
@@ -105,9 +101,9 @@ export default function CricTracker() {
       >
         {/* Left Section */}
         <div className="flex-1 flex justify-center md:justify-start">
-          <div className="w-60 h-72 md:w-80 md:h-96 lg:w-[300px] lg:h-[350px]">
+          <div className="w-48 h-60 sm:w-60 sm:h-72 md:w-80 md:h-96 lg:w-[300px] lg:h-[350px]">
             <img
-              src="CI.png" // Replace with your image path
+              src="CI.png"
               alt="CricTracker UI"
               className="w-full h-full object-cover rounded-lg"
             />
@@ -117,7 +113,7 @@ export default function CricTracker() {
         {/* Right Section */}
         <div className="flex-1 flex flex-col gap-6">
           {/* Title */}
-          <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center md:text-left">
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-center md:text-left">
             CEMENTECH INFRA
           </h1>
 
