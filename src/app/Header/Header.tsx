@@ -58,6 +58,15 @@ export default function Header() {
               Skills
             </a>
           </li>
+
+          <li className="flex h-10 px-3 py-2 justify-center items-center gap-1.5">
+            <a
+              href="#projects"
+              className="text-[#FFFFFF] hover:text-[#7127BA] text-xl md:text-2xl font-medium leading-[20px] hover:text-primaryColor  pr-0 md:pr-20"
+            >
+              Works
+            </a>
+          </li>
           <li className="flex h-10 px-3 py-2 justify-center items-center gap-1.5 rounded-md">
             <a
               href="#ConnectWithMe"
