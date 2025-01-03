@@ -18,7 +18,7 @@ const Hero = () => {
           </div>
         </section>
       </div>
-      <div className=" z-50 absolute ml-8  md:ml-[550px] mt-40 md:mt-[240px]">
+      <div className=" z-40 absolute ml-8  md:ml-[550px] mt-40 md:mt-[240px]">
         <span className="text-4xl text-white mt-36 keyboard 	 ">
           {" "}
           Judge a book <br /> by its <span className="key">C</span>

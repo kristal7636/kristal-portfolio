@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const skillsData = [
   {
@@ -36,6 +36,35 @@ const skillsData = [
 ];
 
 const ConnectWithME = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const connectRef = useRef<HTMLDivElement | null>(null);
+
+  const handleIntersection = ([entry]: IntersectionObserverEntry[]) => {
+    if (entry.isIntersecting) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false); // Optionally reset visibility when scrolling away
+    }
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(handleIntersection, {
+      root: null, // Use the viewport as the root
+      threshold: 0.2, // Trigger when 20% of the element is visible
+      rootMargin: "0px 0px -20% 0px", // This ensures that the element becomes visible a little earlier as you scroll up
+    });
+
+    if (connectRef.current) {
+      observer.observe(connectRef.current);
+    }
+
+    return () => {
+      if (connectRef.current) {
+        observer.unobserve(connectRef.current);
+      }
+    };
+  }, []);
+
   const handleGmailClick = () => {
     const screenWidth = window.innerWidth;
 
@@ -51,8 +80,11 @@ const ConnectWithME = () => {
 
   return (
     <div
+      ref={connectRef}
       id="ConnectWithMe"
-      className="flex flex-col gap-2 md:gap-8 my-20 sm:mt-10 md:mt-36"
+      className={`flex flex-col gap-2 md:gap-8 my-20 sm:mt-10 md:mt-36 ${
+        isVisible ? "animate-fade-in-from-bottom" : ""
+      }`}
     >
       <div className="flex justify-center">
         <h1 className="text">
