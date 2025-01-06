@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className=" ">
+    <div className=" " id="hero">
       <div className="  absolute flex ml-8 md:ml-[550px] mt-[85px]  text-xl ">
         <p>Hello 👋 I’m</p>
         <section className="animation">
