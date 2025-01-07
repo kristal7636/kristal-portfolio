@@ -9,12 +9,16 @@ import Footer from "./Footer/Footer";
 import Contact from "./ContactMe/ContactMe";
 import Projects from "./ProjectsWorkedOn/ProjectsWorkedOn";
 
+// Define the type for direction
+type Direction = "left" | "right";
+
 const preahvihear = Preahvihear({
   weight: "400", // Specify the weight if needed
   subsets: ["latin"], // Subsets of the font
 });
 
-const fadeInVariants = (direction) => ({
+// Update fadeInVariants to use the defined type for direction
+const fadeInVariants = (direction: Direction) => ({
   hidden: {
     opacity: 0,
     x: direction === "left" ? -100 : direction === "right" ? 100 : 0,
