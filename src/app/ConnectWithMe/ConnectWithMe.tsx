@@ -91,7 +91,7 @@ const ConnectWithME = () => {
           <h2 className="letter text-3xl md:text-4xl flex">Connect With Me</h2>
         </h1>
       </div>
-      <div className="mx-0 md:mx-40 mt-10 flex flex-wrap gap-4 justify-center">
+      <div className="mx-0 md:mx-40 mt-10 flex flex-wrap gap-4 justify-center ">
         {skillsData.map((skill, index) => (
           <a
             key={index}
@@ -99,7 +99,7 @@ const ConnectWithME = () => {
             target={skill.isGmail ? "_self" : "_blank"} // Gmail won't open a new tab
             rel={skill.isGmail ? undefined : "noopener noreferrer"}
             onClick={skill.isGmail ? handleGmailClick : undefined} // Add click handler for Gmail
-            className="min-w-[50px] my-0 mx-0 md:my-2 md:mx-2 backdrop-blur-md backdrop-brightness-150   md:py-4 md:px-6 py-2 px-4 rounded-full flex items-center justify-center shadow-lg"
+            className="min-w-[50px] my-0 mx-0 md:my-2 border  md:mx-2 backdrop-blur-md backdrop-brightness-150   md:py-4 md:px-6 py-2 px-4 rounded-full flex items-center justify-center shadow-lg"
           >
             <img
               src={skill.src}

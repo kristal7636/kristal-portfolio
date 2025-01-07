@@ -91,7 +91,7 @@ export default function CricTracker() {
         </h2>
       </div>
       <div
-        className="py-8 px-4 sm:px-6 md:px-8 lg:px-12 shadow-lg text-white flex flex-col md:flex-row gap-8 md:gap-12 rounded-3xl bg-gradient-to-r from-[#1a0b2e] to-[#560ba1]"
+        className="py-8 px-4 sm:px-6 md:px-8  drop-shadow-2xl lg:px-12 shadow-lg text-white flex flex-col md:flex-row gap-8 md:gap-12 rounded-3xl bg-gradient-to-r from-[#1a0b2e] to-[#560ba1]"
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         style={{
@@ -100,8 +100,8 @@ export default function CricTracker() {
         }}
       >
         {/* Left Section */}
-        <div className="flex-1 flex justify-center md:justify-start">
-          <div className="w-48 h-60 sm:w-60 sm:h-72 md:w-90 md:h-96 lg:w-[300px] lg:h-[350px] ">
+        <div className="flex-1 flex justify-center md:justify-start ">
+          <div className="w-48 h-60 sm:w-60 sm:h-72 md:w-90 md:h-96 lg:w-[300px] lg:h-[350px]">
             <img
               src="CI.png"
               alt="CricTracker UI"
@@ -111,18 +111,18 @@ export default function CricTracker() {
         </div>
 
         {/* Right Section */}
-        <div className="flex-1 flex flex-col gap-6">
+        <div className="flex-1 flex flex-col gap-6 ">
           {/* Title */}
           <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-center md:text-left">
             CEMENTECH INFRA
           </h1>
 
           {/* Technologies Used */}
-          <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+          <div className="flex flex-wrap gap-4 justify-center md:justify-start ">
             {skillsData.map((skill, index) => (
               <div
                 key={index}
-                className="backdrop-blur-md backdrop-brightness-150 px-4 py-2 text-white rounded-full flex items-center gap-2 shadow-lg transform group-hover:scale-110 transition-transform"
+                className="backdrop-blur-md backdrop-brightness-150 px-4 py-2 text-white border rounded-full flex items-center gap-2 shadow-lg transform group-hover:scale-110 transition-transform"
               >
                 <img
                   src={skill.src}
@@ -149,7 +149,7 @@ export default function CricTracker() {
             >
               <button
                 type="submit"
-                className="w-full md:w-auto py-3 px-6 bg-gradient-to-r from-[#560ba1] to-[#1a0b2e] text-white rounded-full flex items-center justify-center gap-4 shadow-md hover:scale-105 transition-transform"
+                className="w-full border md:w-auto py-3 px-6 bg-gradient-to-r from-[#560ba1] to-[#1a0b2e] text-white rounded-full flex items-center justify-center gap-4 shadow-md hover:scale-105 transition-transform"
               >
                 <Link />
                 Go to CEMENTECH INFRA
