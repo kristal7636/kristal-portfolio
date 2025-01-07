@@ -1,5 +1,4 @@
 "use client";
-import { motion } from "framer-motion";
 import { Preahvihear } from "next/font/google";
 import Header from "./Header/Header";
 import Hero from "./Hero/Hero";
@@ -9,75 +8,24 @@ import Footer from "./Footer/Footer";
 import Contact from "./ContactMe/ContactMe";
 import Projects from "./ProjectsWorkedOn/ProjectsWorkedOn";
 
-// Define the type for direction
-type Direction = "left" | "right";
-
 const preahvihear = Preahvihear({
   weight: "400", // Specify the weight if needed
   subsets: ["latin"], // Subsets of the font
-});
-
-// Update fadeInVariants to use the defined type for direction
-const fadeInVariants = (direction: Direction) => ({
-  hidden: {
-    opacity: 0,
-    x: direction === "left" ? -100 : direction === "right" ? 100 : 0,
-  },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 0.8, ease: "easeInOut" },
-  },
 });
 
 export default function Home() {
   return (
     <div className={`${preahvihear.className}`}>
       <Header />
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.3 }}
-        variants={fadeInVariants("right")}
-      >
-        <Hero />
-      </motion.div>
+      <Hero />
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.3 }}
-        variants={fadeInVariants("left")}
-      >
-        <Skills />
-      </motion.div>
+      <Skills />
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.3 }}
-        variants={fadeInVariants("right")}
-      >
-        <ConnectWithME />
-      </motion.div>
+      <ConnectWithME />
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.3 }}
-        variants={fadeInVariants("left")}
-      >
-        <Projects />
-      </motion.div>
+      <Projects />
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.3 }}
-        variants={fadeInVariants("right")}
-      >
-        <Contact />
-      </motion.div>
+      <Contact />
 
       <Footer />
     </div>
