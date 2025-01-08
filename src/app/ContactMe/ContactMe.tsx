@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import AOS from "aos";
 
 // Define the types for form data and error messages
 type FormData = {
@@ -99,18 +100,31 @@ const Contact: React.FC = () => {
     }
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      offset: 50, // Offset to trigger animation
+      easing: "ease-in-out", // Animation easing
+      once: true, // Whether animation should happen only once
+    });
+  });
+
   return (
     <div className="max-w-4xl mx-auto px-4 py-16 " id="form">
       <form
+        data-aos="zoom-out"
         className="text-white shadow-lg rounded-lg p-8 bg-gradient-to-r from-[#1a0b2e] to-[#560ba1] "
         onSubmit={handleSubmit}
       >
         <div className="mb-4">
-          <label className="block text-white">Full Name</label>
+          <label className="block text-white" data-aos="fade-right">
+            Full Name
+          </label>
           <input
+            data-aos="fade-left"
             type="text"
             name="name"
-            className={`w-full px-4 py-2 border text-black rounded-md ${
+            className={`w-full px-4 py-2 border text-black rounded-md " ${
               errors.name ? "border-red-500" : "border-gray-300"
             }`}
             value={formData.name}
@@ -120,11 +134,14 @@ const Contact: React.FC = () => {
           {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
         </div>
         <div className="mb-4">
-          <label className="block text-white">Email</label>
+          <label className="block text-white" data-aos="fade-right">
+            Email
+          </label>
           <input
+            data-aos="fade-left"
             type="email"
             name="email"
-            className={`w-full px-4 py-2 border text-black rounded-md ${
+            className={`w-full px-4 py-2 border text-black rounded-md " ${
               errors.email ? "border-red-500" : "border-gray-300"
             }`}
             value={formData.email}
@@ -136,11 +153,14 @@ const Contact: React.FC = () => {
           )}
         </div>
         <div className="mb-4">
-          <label className="block text-white">Phone Number</label>
+          <label className="block text-white" data-aos="fade-right">
+            Phone Number
+          </label>
           <input
+            data-aos="fade-left"
             type="tel"
             name="phone"
-            className={`w-full px-4 py-2 border text-black rounded-md ${
+            className={`w-full px-4 py-2 border text-black rounded-md " ${
               errors.phone ? "border-red-500" : "border-gray-300"
             }`}
             value={formData.phone}
@@ -152,10 +172,13 @@ const Contact: React.FC = () => {
           )}
         </div>
         <div className="mb-4">
-          <label className="block text-white">Message</label>
+          <label className="block text-white" data-aos="fade-right">
+            Message
+          </label>
           <textarea
+            data-aos="fade-left"
             name="message"
-            className={`w-full px-4 py-2 border text-black rounded-md ${
+            className={`w-full px-4 py-2 border text-black rounded-md " ${
               errors.message ? "border-red-500" : "border-gray-300"
             }`}
             value={formData.message}
@@ -167,6 +190,7 @@ const Contact: React.FC = () => {
           )}
         </div>
         <button
+          data-aos="flip-up"
           type="submit"
           className="w-full py-2 bg-blue-500 text-white rounded-md bg-gradient-to-r from-[#560ba1] to-[#1a0b2e]"
         >

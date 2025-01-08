@@ -1,7 +1,16 @@
 "use client";
-import React from "react";
-
+import React, { useEffect } from "react";
+import AOS from "aos";
 const Hero = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      offset: 50, // Offset to trigger animation
+      easing: "ease-in-out", // Animation easing
+      once: true, // Whether animation should happen only once
+    });
+  });
+
   return (
     <div className=" " id="hero">
       <div className="  absolute flex ml-8 md:ml-[550px] mt-[85px]  text-xl ">
@@ -18,7 +27,10 @@ const Hero = () => {
           </div>
         </section>
       </div>
-      <div className=" z-40 absolute ml-8  md:ml-[550px] mt-40 md:mt-[240px]">
+      <div
+        className=" z-40 absolute ml-8  md:ml-[550px] mt-40 md:mt-[240px]"
+        data-aos="fade-left"
+      >
         <span className="text-4xl text-white mt-36 keyboard 	 ">
           {" "}
           Judge a book <br /> by its <span className="key">C</span>
@@ -36,6 +48,7 @@ const Hero = () => {
           <img
             src="./avatar-imac.svg"
             className="rounded-full md:animate-pulse opacity-50 md:opacity-80 md:mb-0 mb-10 "
+            data-aos="flip-right"
           />
         </div>
         <img

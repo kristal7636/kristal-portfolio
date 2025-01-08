@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
+import AOS from "aos";
 
 const skillsData = [
   {
@@ -65,6 +66,13 @@ const ConnectWithME = () => {
     };
   }, []);
 
+  AOS.init({
+    duration: 1000, // Animation duration
+    offset: 50, // Offset to trigger animation
+    easing: "ease-in-out", // Animation easing
+    once: true, // Whether animation should happen only once
+  });
+
   const handleGmailClick = () => {
     const screenWidth = window.innerWidth;
 
@@ -91,7 +99,10 @@ const ConnectWithME = () => {
           <h2 className="letter text-3xl md:text-4xl flex">Connect With Me</h2>
         </h1>
       </div>
-      <div className="mx-0 md:mx-40 mt-10 flex flex-wrap gap-4 justify-center ">
+      <div
+        className="mx-0 md:mx-40 mt-10 flex flex-wrap gap-4 justify-center "
+        data-aos="zoom-in"
+      >
         {skillsData.map((skill, index) => (
           <a
             key={index}

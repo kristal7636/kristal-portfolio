@@ -29,21 +29,11 @@ export default function Home() {
   return (
     <div className={`${preahvihear.className}`}>
       <Header />
-      <div data-aos="fade-right">
-        <Hero />
-      </div>
-      <div data-aos="fade-left">
-        <Skills />
-      </div>
-      <div data-aos="fade-right">
-        <ConnectWithME />
-      </div>
-      <div data-aos="fade-left">
-        <Projects />
-      </div>
-      <div data-aos="fade-right">
-        <Contact />
-      </div>
+      <Hero />
+      <Skills />
+      <ConnectWithME />
+      <Projects />
+      <Contact />
       <Footer />
     </div>
   );

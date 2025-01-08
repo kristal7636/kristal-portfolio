@@ -1,6 +1,7 @@
 "use client";
 import { Link } from "lucide-react";
 import React, { useState, useEffect } from "react";
+import AOS from "aos";
 
 interface Skill {
   src: string;
@@ -18,6 +19,13 @@ export default function CricTracker() {
         navigator.userAgent
       );
       setIsMobile(isMobileDevice);
+
+      AOS.init({
+        duration: 1000, // Animation duration
+        offset: 50, // Offset to trigger animation
+        easing: "ease-in-out", // Animation easing
+        once: true, // Whether animation should happen only once
+      });
     };
 
     checkMobile();
@@ -100,7 +108,10 @@ export default function CricTracker() {
         }}
       >
         {/* Left Section */}
-        <div className="flex-1 flex justify-center md:justify-start ">
+        <div
+          className="flex-1 flex justify-center md:justify-start "
+          data-aos="flip-right"
+        >
           <div className="w-48 h-60 sm:w-60 sm:h-72 md:w-90 md:h-96 lg:w-[300px] lg:h-[350px]">
             <img
               src="CI.png"
@@ -111,7 +122,7 @@ export default function CricTracker() {
         </div>
 
         {/* Right Section */}
-        <div className="flex-1 flex flex-col gap-6 ">
+        <div className="flex-1 flex flex-col gap-6  " data-aos="fade-left">
           {/* Title */}
           <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-center md:text-left">
             CEMENTECH INFRA

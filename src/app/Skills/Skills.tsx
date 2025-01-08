@@ -1,5 +1,6 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 
 const skillsData = [
   { src: "./html5.svg", alt: "HTML5 Logo", label: "HTML5" },
@@ -19,6 +20,11 @@ const skillsData = [
 ];
 
 const Skills = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+    });
+  });
   return (
     <div
       className=" flex flex-col gap-2 md:gap-8 my-20 sm:mt-10 md:mt-36 bg-hero-pattern bg-custom-size bg-no-repeat     bg-custom-center
@@ -32,7 +38,10 @@ const Skills = () => {
           </h2>
         </h1>
       </div>
-      <div className="  mx-0 md:mx-40 mt-10 flex flex-wrap gap-4 justify-center">
+      <div
+        className="  mx-0 md:mx-40 mt-10 flex flex-wrap gap-4 justify-center"
+        data-aos="zoom-in"
+      >
         {skillsData.map((skill, index) => (
           <div
             key={index}
