@@ -1,6 +1,5 @@
 "use client";
 import { Preahvihear } from "next/font/google";
-import "aos/dist/aos.css"; // Import AOS styles
 import Header from "./Header/Header";
 import Hero from "./Hero/Hero";
 import Skills from "./Skills/Skills";
