@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 
 const skillsData = [
   { src: "./html5.svg", alt: "HTML5 Logo", label: "HTML5" },
