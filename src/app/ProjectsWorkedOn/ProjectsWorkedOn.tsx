@@ -1,7 +1,6 @@
 "use client";
 import { Link } from "lucide-react";
 import React, { useState, useEffect } from "react";
-import AOS from "aos";
 
 interface Skill {
   src: string;
@@ -19,13 +18,6 @@ export default function CricTracker() {
         navigator.userAgent
       );
       setIsMobile(isMobileDevice);
-
-      AOS.init({
-        duration: 1000, // Animation duration
-        offset: 50, // Offset to trigger animation
-        easing: "ease-in-out", // Animation easing
-        once: true, // Whether animation should happen only once
-      });
     };
 
     checkMobile();

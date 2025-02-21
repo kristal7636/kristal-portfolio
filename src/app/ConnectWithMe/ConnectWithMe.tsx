@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import AOS from "aos";
 
 const skillsData = [
   {
@@ -65,13 +64,6 @@ const ConnectWithME = () => {
       }
     };
   }, []);
-
-  AOS.init({
-    duration: 1000, // Animation duration
-    offset: 50, // Offset to trigger animation
-    easing: "ease-in-out", // Animation easing
-    once: true, // Whether animation should happen only once
-  });
 
   const handleGmailClick = () => {
     const screenWidth = window.innerWidth;

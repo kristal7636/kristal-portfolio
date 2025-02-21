@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect } from "react";
-import AOS from "aos";
 
 const skillsData = [
   { src: "./html5.svg", alt: "HTML5 Logo", label: "HTML5" },
@@ -20,11 +19,6 @@ const skillsData = [
 ];
 
 const Skills = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation duration
-    });
-  });
   return (
     <div
       className=" flex flex-col gap-2 md:gap-8 my-20 sm:mt-10 md:mt-36 bg-hero-pattern bg-custom-size bg-no-repeat     bg-custom-center

@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import AOS from "aos";
 
 // Define the types for form data and error messages
 type FormData = {
@@ -100,14 +99,7 @@ const Contact: React.FC = () => {
     }
   };
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation duration
-      offset: 50, // Offset to trigger animation
-      easing: "ease-in-out", // Animation easing
-      once: true, // Whether animation should happen only once
-    });
-  });
+ 
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-16 " id="form">

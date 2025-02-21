@@ -1,15 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
-import AOS from "aos";
 const Hero = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation duration
-      offset: 50, // Offset to trigger animation
-      easing: "ease-in-out", // Animation easing
-      once: true, // Whether animation should happen only once
-    });
-  });
+
 
   return (
     <div className=" " id="hero">
