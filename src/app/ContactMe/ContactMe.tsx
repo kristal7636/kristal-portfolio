@@ -1,5 +1,5 @@
 "use client";
-import React, {  useState } from "react";
+import React, { useState } from "react";
 
 // Define the types for form data and error messages
 type FormData = {
@@ -99,8 +99,6 @@ const Contact: React.FC = () => {
     }
   };
 
- 
-
   return (
     <div className="max-w-4xl mx-auto px-4 py-16 " id="form">
       <form
@@ -113,7 +111,6 @@ const Contact: React.FC = () => {
             Full Name
           </label>
           <input
-            data-aos="fade-left"
             type="text"
             name="name"
             className={`w-full px-4 py-2 border text-black rounded-md " ${
@@ -130,7 +127,6 @@ const Contact: React.FC = () => {
             Email
           </label>
           <input
-            data-aos="fade-left"
             type="email"
             name="email"
             className={`w-full px-4 py-2 border text-black rounded-md " ${
@@ -149,7 +145,6 @@ const Contact: React.FC = () => {
             Phone Number
           </label>
           <input
-            data-aos="fade-left"
             type="tel"
             name="phone"
             className={`w-full px-4 py-2 border text-black rounded-md " ${
@@ -168,7 +163,6 @@ const Contact: React.FC = () => {
             Message
           </label>
           <textarea
-            data-aos="fade-left"
             name="message"
             className={`w-full px-4 py-2 border text-black rounded-md " ${
               errors.message ? "border-red-500" : "border-gray-300"
