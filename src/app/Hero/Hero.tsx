@@ -43,7 +43,7 @@ const Hero = () => {
         </p>
       </div>
       <div
-        className="ml-0 items-center flex justify-center md:ml-[250px] w-full md:w-[250px] relative"
+        className="ml-0 items-center flex flex-col justify-center md:ml-[250px] w-full md:w-[250px] relative"
         data-aos="fade-left"
       >
         <div className="pt- md:pt-44 opacity-50 md:opacity-100">
@@ -57,6 +57,15 @@ const Hero = () => {
           src="./Arrow.png"
           className="rounded-full hidden md:block w-[200px] top-10 animate-pulse -right-20 absolute"
         />
+        <a
+          href="./Varun_Gaudani.pdf"
+          download
+          className="mt-6  text-white px-6 py-3 rounded-lg text-lg font-semibold bg-gradient-to-r from-[#560ba1] to-[#1a0b2e] transition-all glow-on-hover"
+        >
+          Download CV
+        </a>
+
+        
       </div>
       <div
         className="pr-[15px] md:ml-32 pl-[30px] md:pl-[50px] lg:pl-[200px] mt-[50px] md:mt-[100px] lg:mt-[150px]"
