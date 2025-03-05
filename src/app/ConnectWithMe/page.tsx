@@ -92,7 +92,7 @@ const ConnectWithME = () => {
     >
       <div className="flex justify-center">
         <h1 className="text">
-          <h2 className="letter text-3xl md:text-4xl flex">Connect With Me</h2>
+          <p className="letter text-3xl md:text-4xl flex">Connect With Me</p>
         </h1>
       </div>
       <div

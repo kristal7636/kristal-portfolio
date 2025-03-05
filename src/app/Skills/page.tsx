@@ -26,11 +26,11 @@ const Skills = () => {
       id="skills"
     >
       <div className="flex justify-center">
-        <h1 className="text">
-          <h2 className="letter text-3xl md:text-4xl flex">
+        <h2 className="text">
+          <p className="letter text-3xl md:text-4xl flex">
             S<span className="transform letter-2 inline-block">K</span>i l l s
-          </h2>
-        </h1>
+          </p>
+        </h2>
       </div>
       <div
         className="  mx-0 md:mx-40 mt-10 flex flex-wrap gap-4 justify-center"

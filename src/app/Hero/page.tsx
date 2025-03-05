@@ -61,7 +61,7 @@ const Hero = () => {
   href="./Varun_Gaudani.pdf"
   target="_blank"
   rel="noopener noreferrer"
-  className="mt-6 text-white px-6 py-3 rounded-lg text-lg font-semibold bg-gradient-to-r from-[#560ba1] to-[#1a0b2e] transition-all glow-on-hover"
+  className="mt-6 text-white  px-6 py-3 rounded-lg text-lg font-semibold bg-gradient-to-r from-[#560ba1] to-[#1a0b2e] transition-all glow-on-hover"
 >
   Download CV
 </a>
