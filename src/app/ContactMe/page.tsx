@@ -102,7 +102,7 @@ const Contact: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-16 " id="form">
       <form
-        data-aos="zoom-out"
+        data-aos="zoom-in"
         className="text-white  shadow-lg rounded-lg p-8 bg-gradient-to-r from-[#1a0b2e] to-[#560ba1] "
         onSubmit={handleSubmit}
       >

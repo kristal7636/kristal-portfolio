@@ -114,7 +114,7 @@ export default function CricTracker() {
         </div>
 
         {/* Right Section */}
-        <div className="flex-1 flex flex-col gap-6  " data-aos="fade-left">
+        <div className="flex-1 flex flex-col gap-6  " data-aos="zoom-in">
           {/* Title */}
           <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-center md:text-left">
             CEMENTECH INFRA
