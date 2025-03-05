@@ -84,7 +84,7 @@ export default function CricTracker() {
   ];
 
   return (
-    <div className="px-4 md:px-8 lg:px-16" id="projects">
+    <div className="px-4 md:px-8 lg:px-16" id="projects" data-aos="zoom-in">
       <div className="flex flex-col md:flex-row justify-between items-center mb-8">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center md:text-left mb-4 md:mb-0">
           Projects I’ve <br /> Worked on
