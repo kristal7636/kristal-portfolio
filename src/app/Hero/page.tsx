@@ -83,13 +83,13 @@ const Hero = () => {
           <p className="text-sm sm:text-base md:text-lg inline">
             <span className="shine">
               A Frontend developer, functioning in the industry for 3+ years
-              now.
+              now. {""}
             </span>
             <span className="shine">
-              I make meaningful and delightful digital products that create an
+              I make meaningful and delightful digital products that create an{" "}
             </span>
             <span className="shine">
-              between user needs and business goals.
+              equilibrium between user needs and business goals.
             </span>
           </p>
         </div>
