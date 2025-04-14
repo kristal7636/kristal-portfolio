@@ -7,6 +7,7 @@ import ConnectWithME from "./ConnectWithMe/page";
 import Footer from "./Footer/page";
 import Contact from "./ContactMe/page";
 import Projects from "./ProjectsWorkedOn/page";
+import Form from "./Form/Form";
 
 const preahvihear = Preahvihear({
   weight: "400",
@@ -21,7 +22,8 @@ export default function Home() {
       <Skills />
       <ConnectWithME />
       <Projects />
-      <Contact />
+      <Form />
+
       <Footer />
     </div>
   );

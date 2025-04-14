@@ -12,7 +12,7 @@ type FormData = {
 type FormErrors = {
   name: string;
   email: string;
-  phone: string;
+  phone: string;  
   message: string;
 };
 
