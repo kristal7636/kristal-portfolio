@@ -22,8 +22,8 @@ export default function Home() {
       <Skills />
       <ConnectWithME />
       <Projects />
-      <Form />
-
+      {/* <Form /> */}
+      <Contact />
       <Footer />
     </div>
   );
