@@ -9,7 +9,10 @@ function ContactForm() {
   if (state.succeeded) {
     return (
       <div className="max-w-4xl mx-auto px-4 py-16 text-center text-white">
-        <p className="text-green-400 text-xl">Thanks for reaching out!</p>
+        <p className="text-green-400 text-xl" data-aos="flip-up">
+          Thanks for reaching out! <br />
+          We will contact you soon.
+        </p>
       </div>
     );
   }
@@ -17,13 +20,17 @@ function ContactForm() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-16" id="form">
       <form
+        data-aos="zoom-in"
         onSubmit={handleSubmit}
         className="text-white shadow-lg rounded-lg p-8 bg-gradient-to-r from-[#1a0b2e] to-[#560ba1]"
       >
         {/* Full Name */}
         <div className="mb-4">
-          <label className="block text-white">Full Name</label>
+          <label data-aos="fade-right" className="block text-white">
+            Full Name
+          </label>
           <input
+            data-aos="flip-up"
             type="text"
             name="name"
             required
@@ -35,8 +42,11 @@ function ContactForm() {
 
         {/* Email */}
         <div className="mb-4">
-          <label className="block text-white">Email</label>
+          <label data-aos="fade-right" className="block text-white">
+            Email
+          </label>
           <input
+            data-aos="flip-up"
             type="email"
             name="email"
             required
@@ -48,8 +58,11 @@ function ContactForm() {
 
         {/* Phone Number */}
         <div className="mb-4">
-          <label className="block text-white">Phone Number</label>
+          <label data-aos="fade-right" className="block text-white">
+            Phone Number
+          </label>
           <input
+            data-aos="flip-up"
             type="tel"
             name="phone"
             required
@@ -61,18 +74,26 @@ function ContactForm() {
 
         {/* Message */}
         <div className="mb-4">
-          <label className="block text-white">Message</label>
+          <label data-aos="fade-right" className="block text-white">
+            Message
+          </label>
           <textarea
+            data-aos="flip-up"
             name="message"
             required
             className="w-full px-4 py-2 border text-black rounded-md h-36 resize-none border-gray-300"
             placeholder="Type your message..."
           ></textarea>
-          <ValidationError prefix="Message" field="message" errors={state.errors} />
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
+          />
         </div>
 
         {/* Submit Button */}
         <button
+          data-aos="flip-up"
           type="submit"
           disabled={state.submitting}
           className="w-full py-2 bg-gradient-to-r from-[#560ba1] to-[#1a0b2e] text-white rounded-md"
