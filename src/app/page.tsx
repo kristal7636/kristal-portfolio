@@ -5,7 +5,6 @@ import Hero from "./Hero/page";
 import Skills from "./Skills/page";
 import ConnectWithME from "./ConnectWithMe/page";
 import Footer from "./Footer/page";
-import Contact from "./ContactMe/page";
 import Projects from "./ProjectsWorkedOn/page";
 import Form from "./Form/Form";
 
@@ -22,8 +21,7 @@ export default function Home() {
       <Skills />
       <ConnectWithME />
       <Projects />
-      {/* <Contact /> */}
-     <Form/>
+      <Form />
       <Footer />
     </div>
   );
