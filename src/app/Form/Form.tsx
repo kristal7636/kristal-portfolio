@@ -94,7 +94,7 @@ function ContactForm() {
             value={formValues.name}
             onChange={handleChange}
             className="w-full px-4 py-2 border text-black rounded-md border-gray-300"
-            placeholder="John Doe"
+            placeholder="Enter your name"
           />
           {errors.name && (
             <p className="text-red-400 text-sm mt-1">{errors.name}</p>
@@ -136,7 +136,7 @@ function ContactForm() {
             value={formValues.phone}
             onChange={handleChange}
             className="w-full px-4 py-2 border text-black rounded-md border-gray-300"
-            placeholder="1234567890"
+            placeholder="Your phone number"
           />
           {errors.phone && (
             <p className="text-red-400 text-sm mt-1">{errors.phone}</p>
