@@ -86,7 +86,7 @@ function ContactForm() {
           <label data-aos="fade-right" className="block text-white">
             Full Name
           </label>
-          <input
+            <input
             data-aos="flip-up"
             type="text"
             name="name"
@@ -151,7 +151,7 @@ function ContactForm() {
           </label>
           <textarea
             data-aos="flip-up"
-            name="message"
+            name="message" 
             required
             value={formValues.message}
             onChange={handleChange}
