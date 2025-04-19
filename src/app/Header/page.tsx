@@ -102,7 +102,7 @@ export default function Header() {
             className="md:flex flex-col md:flex-row items-center gap-4 absolute md:static top-[64px] left-0 w-full md:w-auto bg-gradient-to-r from-[#1a0b2e] to-[#560ba1] md:bg-none shadow-md md:shadow-none py-4 md:py-0 z-10 origin-top"
           >
             <motion.ul className="flex flex-col md:flex-row items-center gap-4">
-              {["Skills", "Works", "Contact Me"].map((text, index) => {
+              {["Skills", "Works", "Contact Me"].map((text) => {
                 const hrefMap = {
                   Skills: "#skills",
                   Works: "#projects",
