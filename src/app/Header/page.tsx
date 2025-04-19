@@ -43,7 +43,7 @@ export default function Header() {
   };
 
   const menuItems = ["Skills", "Works", "Contact Me"] as const;
-  type MenuItem = typeof menuItems[number];
+  type MenuItem = (typeof menuItems)[number];
 
   const hrefMap: Record<MenuItem, string> = {
     Skills: "#skills",
@@ -99,7 +99,23 @@ export default function Header() {
         </motion.div>
       </div>
 
-      {/* Navigation Menu */}
+      {/* Desktop Menu */}
+      <nav className="hidden md:flex gap-6 pr-10">
+        <ul className="flex gap-28">
+          {menuItems.map((text) => (
+            <li key={text}>
+              <a
+                href={hrefMap[text]}
+                className="text-white hover:text-[#7127BA] text-xl md:text-2xl font-medium transition-colors duration-300"
+              >
+                {text}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      {/* Mobile Navigation */}
       <AnimatePresence>
         {menuOpen && (
           <motion.nav
@@ -107,19 +123,19 @@ export default function Header() {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className="md:flex flex-col md:flex-row items-center gap-4 absolute md:static top-[64px] left-0 w-full md:w-auto bg-gradient-to-r from-[#1a0b2e] to-[#560ba1] md:bg-transparent shadow-md md:shadow-none py-4 md:py-0 z-40 origin-top"
+            className="md:hidden flex flex-col items-center gap-4 absolute top-[64px] left-0 w-full bg-gradient-to-r from-[#1a0b2e] to-[#560ba1] shadow-md py-4 z-40 origin-top"
           >
-            <motion.ul className="flex flex-col md:flex-row items-center gap-4">
+            <motion.ul className="flex flex-col items-center gap-4">
               {menuItems.map((text) => (
                 <motion.li
                   key={text}
                   variants={itemVariants}
-                  className="flex h-10 px-3 py-2 justify-center items-center"
+                  className="h-10 px-3 py-2"
                 >
                   <a
                     href={hrefMap[text]}
                     onClick={closeMenu}
-                    className="text-white hover:text-[#7127BA] text-xl md:text-2xl font-medium leading-[20px] pr-0 md:pr-20 transition-colors duration-300"
+                    className="text-white hover:text-[#7127BA] text-xl font-medium transition-colors duration-300"
                   >
                     {text}
                   </a>
