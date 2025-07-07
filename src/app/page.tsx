@@ -5,7 +5,6 @@ import Hero from "./Hero/page";
 import Skills from "./Skills/page";
 import ConnectWithME from "./ConnectWithMe/page";
 import Footer from "./Footer/page";
-import Projects from "./ProjectsWorkedOn/page";
 import Form from "./Form/Form";
 
 const preahvihear = Preahvihear({
@@ -20,7 +19,6 @@ export default function Home() {
       <Hero />
       <Skills />
       <ConnectWithME />
-      <Projects />
       <Form />
       <Footer />
     </div>

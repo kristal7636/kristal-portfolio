@@ -8,32 +8,32 @@ const skillsData = [
     src: "./linkedIn.svg",
     alt: "HTML5 Logo",
     label: "LinkedIn",
-    href: "https://in.linkedin.com/in/varun-gaudani-938b79292",
+    href: "https://in.linkedin.com/in/kristal-bhakhar-720325207",
   },
   {
     src: "./instagram.svg",
     alt: "CSS3 Logo",
     label: "Instagram",
-    href: "https://www.instagram.com/varun_verse_2505/",
+    href: "https://www.instagram.com/_kristal_7636",
   },
   {
     src: "./facebook.svg",
     alt: "JavaScript Logo",
     label: "Facebook",
-    href: "https://www.facebook.com/profile.php?id=100075145203930",
+    href: "",
   },
   {
     src: "./gmail.svg",
     alt: "React Hook Forms Logo",
     label: "Gmail",
-    href: "#",
+    href: "patelkristal86@gmail.com",
     isGmail: true,
   },
   {
     src: "./github.png",
     alt: "React Hook Forms Logo",
     label: "GitHub",
-    href: "https://github.com/Varun1452",
+    href: "https://github.com/kristal7636",
   },
 ];
 

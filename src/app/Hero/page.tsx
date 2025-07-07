@@ -17,7 +17,7 @@ const Hero = () => {
         <p>Hello 👋 I’m</p>
         <section className="animation">
           <div className="first">
-            <div>Varun Gaudani</div>
+            <div>Kristal Bhakhar</div>
           </div>
           <div className="second">
             <div>Web Developer</div>
@@ -74,11 +74,7 @@ const Hero = () => {
           I am a Software Engineer.
         </h2>
         <br />
-        <span className="text-sm sm:text-base md:text-lg text-white">
-          Currently, I am a{" "}
-          <span className="text-[#7127BA]">Software Engineer</span> at VEERRANVI
-          TECHNOLOGIES
-        </span>
+       
         <div className="pt-5 sm:pt-8 md:pt-10 text-white mr-10 md:mr-[400px]">
           <p className="text-sm sm:text-base md:text-lg inline">
             <span className="shine">
