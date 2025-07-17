@@ -52,7 +52,7 @@ export default function Header() {
   };
 
   return (
-    <header className="flex items-center justify-between p-2 flex-wrap bg-gradient-to-r from-[#1a0b2e] to-[#560ba1] shadow-lg fixed top-0 left-0 w-full z-50">
+    <header className="flex items-center justify-between p-2 flex-wrap bg-gradient-to-l from-[#043a43] to-[#4e7da1] shadow-lg fixed top-0 left-0 w-full z-50">
       {/* Logo */}
       <div className="cursor-pointer flex items-center z-50">
         <img
@@ -123,7 +123,7 @@ export default function Header() {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className="md:hidden flex flex-col items-center gap-4 absolute top-[64px] left-0 w-full bg-gradient-to-r from-[#1a0b2e] to-[#560ba1] shadow-md py-4 z-40 origin-top"
+            className="md:hidden flex flex-col items-center gap-4 absolute top-[64px] left-0 w-full bg-gradient-to-l from-[#043a43] to-[#4e7da1] shadow-md py-4 z-40 origin-top"
           >
             <motion.ul className="flex flex-col items-center gap-4">
               {menuItems.map((text) => (
@@ -135,7 +135,7 @@ export default function Header() {
                   <a
                     href={hrefMap[text]}
                     onClick={closeMenu}
-                    className="text-white hover:text-[#7127BA] text-xl font-medium transition-colors duration-300"
+                    className="text-white hover:text-[#043a43] text-xl font-medium transition-colors duration-300"
                   >
                     {text}
                   </a>

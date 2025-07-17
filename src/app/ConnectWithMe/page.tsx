@@ -16,12 +16,7 @@ const skillsData = [
     label: "Instagram",
     href: "https://www.instagram.com/_kristal_7636",
   },
-  {
-    src: "./facebook.svg",
-    alt: "JavaScript Logo",
-    label: "Facebook",
-    href: "",
-  },
+ 
   {
     src: "./gmail.svg",
     alt: "React Hook Forms Logo",
@@ -75,7 +70,7 @@ const ConnectWithME = () => {
     const screenWidth = window.innerWidth;
 
     if (screenWidth <= 768) {
-      window.location.href = "mailto:varungaudani80@gmail.com";
+      window.location.href = "mailto:patelkristal86@gmail.com.com";
     } else {
       window.location.href =
         "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWrRvwdQRWjVlbjBHhXPmQGXWRrjFPvGVGVVSxxNHhHfQJGgVflhxCBGCtjWJLwwLvLqxhFBG";

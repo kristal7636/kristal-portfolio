@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
 function ContactForm() {
-  const [state, handleSubmit] = useForm("maneknap");
+  const [state, handleSubmit] = useForm("xzzvzdba");
   const [formValues, setFormValues] = useState({
     name: "",
     email: "",
@@ -79,7 +79,7 @@ function ContactForm() {
       <form
         data-aos="zoom-in"
         onSubmit={handleSubmit}
-        className="text-white shadow-lg rounded-lg p-8 bg-gradient-to-r from-[#1a0b2e] to-[#560ba1]"
+        className="text-white shadow-lg rounded-lg p-8 bg-gradient-to-l from-[#043a43] to-[#4e7da1]"
       >
         {/* Full Name */}
         <div className="mb-4">
@@ -174,7 +174,7 @@ function ContactForm() {
             data-aos="flip-up"
             type="submit"
             disabled={state.submitting}
-            className="w-full py-2 bg-gradient-to-r from-[#560ba1] to-[#1a0b2e] text-white rounded-md"
+            className="w-full py-2 bg-gradient-to-l from-[#4e7da1] to-[#043a43] text-white rounded-md"
           >
             {state.submitting ? "Sending..." : "Submit"}
           </button>

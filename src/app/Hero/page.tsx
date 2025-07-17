@@ -58,10 +58,10 @@ const Hero = () => {
           className="rounded-full hidden md:block w-[200px] top-10 animate-pulse -right-20 absolute"
         />
         <a
-          href="./Varun_Gaudani.pdf"
+          href="./kristal_bhakhar.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-6 text-white  px-6 py-3 rounded-lg text-lg font-semibold bg-gradient-to-r from-[#560ba1] to-[#1a0b2e] transition-all glow-on-hover"
+          className="mt-6 text-white  px-6 py-3 rounded-lg text-lg font-semibold bg-gradient-to-l from-[#4e7da1] to-[#043a43] transition-all glow-on-hover"
         >
           Download CV
         </a>

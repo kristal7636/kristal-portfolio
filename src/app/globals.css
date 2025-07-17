@@ -21,7 +21,9 @@ body {
   color: var(--foreground);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to right, #560ba1, #1a0b2e);
+  /* background-image: linear-gradient(to right, #ff9900, #ffe600); */
+  background-image: linear-gradient(to right, #043a43, #4e7da1);
+
 }
 
 .key {
@@ -31,7 +33,7 @@ body {
   transition: transform 0.2s;
   font-size: 4rem;
   margin-top: 15px;
-  color: #7127ba;
+  color: #033242;
 }
 
 @keyframes pressDown1 {
@@ -228,7 +230,7 @@ p {
 }
 
 .first div {
-  color: #7127ba;
+  color: #033242;
 }
 .second div {
   /* background-color: #cd921e; */
@@ -273,22 +275,22 @@ p {
 @keyframes lights {
   0% {
     color: hsl(0, 0%, 100%);
-    text-shadow: 0 0 1em hsla(0, 100%, 49%, 0.2),
-      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+    text-shadow: 0 0 1em hsla(40, 100%, 60%, 0.2),
+      0 0 0.125em hsla(40, 100%, 60%, 0.2),
       -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
       1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
   }
 
   30% {
     color: hsl(0, 0%, 100%);
-    text-shadow: 0 0 1em hsl(0, 100%, 50%), 0 0 0.125em hsl(0, 100%, 50%),
+    text-shadow: 0 0 1em hsla(200, 100%, 60%, 0.4), 0 0 0.125em hsla(200, 100%, 60%, 0.4),
       -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
       0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
   }
 
   40% {
     color: hsl(0, 0%, 100%);
-    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+    text-shadow: 0 0 1em hsla(40, 100%, 60%, 0.2),
       0 0 0.125em hsla(320, 100%, 90%, 0.5),
       -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
       0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
@@ -296,16 +298,16 @@ p {
 
   70% {
     color: hsl(0, 0%, 100%);
-    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+    text-shadow: 0 0 1em hsla(40, 100%, 60%, 0.2),
+      0 0 0.125em hsla(40, 100%, 60%, 0.2),
       0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
       -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
   }
 
   100% {
     color: hsl(0, 0%, 100%);
-    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
-      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+    text-shadow: 0 0 1em hsla(40, 100%, 60%, 0.2),
+      0 0 0.125em hsla(40, 100%, 60%, 0.2),
       1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
       -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
   }
@@ -398,7 +400,7 @@ h2 {
 .shine {
   transform: translate(-50%, -50%);
   color: #ffffff;
-  background: linear-gradient(to right, white 0, #7127ba 10%, white 50%);
+  background: linear-gradient(to right, white 0, #043a43 10%, white 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 3s infinite linear;
@@ -441,18 +443,9 @@ h2 {
   content: "";
   background: linear-gradient(
     50deg,
-    #560ba1,
-    #1a0b2e,
-    #560ba1,
-    #1a0b2e,
-    #560ba1,
-    #1a0b2e,
-    #560ba1,
-    #1a0b2e,
-    #560ba1,
-    #1a0b2e,
-    #560ba1,
-    #1a0b2e
+    white,
+    grey
+
   );
   position: absolute;
   top: -2px;
@@ -486,7 +479,7 @@ h2 {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #560ba1;
+  background: #043a43;
   left: 0;
   top: 0;
   border-radius: 10px;

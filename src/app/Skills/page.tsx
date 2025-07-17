@@ -6,7 +6,7 @@ const skillsData = [
   { src: "./CSS3.svg", alt: "CSS3 Logo", label: "CSS3" },
   { src: "./js.svg", alt: "JavaScript Logo", label: "JavaScript" },
   { src: "./RJS.svg", alt: "ReactJS Logo", label: "ReactJS" },
-  { src: "./RDJS.svg", alt: "Redux Logo", label: "Redux" },
+  { src: "./nodejs-icon.svg", alt: "Node Logo", label: "Node JS" },
   { src: "./NJS.svg", alt: "NextJS Logo", label: "NextJS" },
   { src: "./RHF.svg", alt: "React Hook Forms Logo", label: "React Hook Forms" },
   { src: "./TW.svg", alt: "Tailwind CSS Logo", label: "Tailwind CSS" },

@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className=" bg-gradient-to-r from-[#1a0b2e] to-[#560ba1] shadow-lg flex items-center justify-between bg-[#7127BA] text-white px-4 py-2 mx-auto w-full max-w-10xl">
+    <footer className=" bg-gradient-to-l from-[#043a43] to-[#4e7da1] shadow-lg flex items-center justify-between text-white px-4 py-2 mx-auto w-full max-w-10xl">
       <div className="flex items-center space-x-2">
         <div className=" cursor-pointer  flex items-center">
           <img
